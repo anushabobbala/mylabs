@@ -15,7 +15,7 @@ public class ReadAndWriteFile {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
-		String filePath = "/Users/muralipadavala/Desktop/testfile.txt";
+		String filePath ="E:/testfiles/inputfile.txt";
 
 		List<String> list = new ArrayList<>();
 		
@@ -39,18 +39,14 @@ public class ReadAndWriteFile {
 		Collections.reverse(list);
 		
 		try {
-			File outputFile = new File("/Users/muralipadavala/Desktop/testfile-out.txt");
-	
-			if (!outputFile.exists()) {
-				outputFile.createNewFile();
-			}
-	
+			File outputFile = new File("E:/testfiles/outputfile.txt");
 			FileWriter fw = new FileWriter(outputFile.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 	
 			for (String str : list) {
 				System.out.println(str);
-				bw.write(str + "\n");
+				bw.write(str);
+				bw.newLine();
 			}
 			bw.close();
 		} catch (IOException e) {
