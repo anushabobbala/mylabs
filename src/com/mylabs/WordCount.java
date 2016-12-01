@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class WordLength {
+public class WordCount {
 	public static void main(String args[]) {
 		String filepath = "E:/testfiles/input.txt";
 		int wordno = 0;
