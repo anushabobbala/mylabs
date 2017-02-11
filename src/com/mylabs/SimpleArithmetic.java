@@ -22,5 +22,7 @@ public class SimpleArithmetic {
 	public static void main(String[] args) {
 		SimpleArithmetic simpleObj = new SimpleArithmetic(21, 6);
 		System.out.println(simpleObj.add());
+		SimpleArithmetic simpleObj2 = new SimpleArithmetic(8, 9);
+		System.out.println(simpleObj2.add());
 	}
 }
